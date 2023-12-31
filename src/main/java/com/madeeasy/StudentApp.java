@@ -1,6 +1,6 @@
 package com.madeeasy;
 
-import com.madeeasy.service.StudentServiceImpl;
+import com.madeeasy.service.impl.StudentServiceImpl;
 
 import java.util.Scanner;
 
@@ -57,7 +57,7 @@ public class StudentApp {
                 studentServiceImpl.findByEmail(email);
                 break;
             case 5:
-                System.out.println("Enter Student id to update : ");
+                System.out.print("Enter Student id to update : ");
                 String studentId = scanner.nextLine();
                 studentServiceImpl.updateStudentById(studentId);
                 break;

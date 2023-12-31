@@ -1,7 +1,8 @@
-package com.madeeasy.service;
+package com.madeeasy.service.impl;
 
-import com.madeeasy.dao.StudentDaoImpl;
+import com.madeeasy.dao.impl.StudentDaoImpl;
 import com.madeeasy.entity.Student;
+import com.madeeasy.service.StudentService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -71,6 +72,7 @@ public class StudentServiceImpl implements StudentService {
                 .phone(phone)
                 .dateOfBirth(dateOfBirth)
                 .build();
+
         return this.studentDaoImpl.saveStudent(student);
     }
 

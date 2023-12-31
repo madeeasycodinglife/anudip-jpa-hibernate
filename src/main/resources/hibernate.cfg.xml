@@ -26,6 +26,7 @@
         <!-- Entity mapping -->
         <mapping class="com.madeeasy.entity.Student"/>
         <mapping class="com.madeeasy.entity.Employee"/>
+        <mapping class="com.madeeasy.entity.Feedback"/>
     </session-factory>
 
 </hibernate-configuration>

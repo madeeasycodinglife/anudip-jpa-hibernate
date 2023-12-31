@@ -1,5 +1,6 @@
-package com.madeeasy.dao;
+package com.madeeasy.dao.impl;
 
+import com.madeeasy.dao.StudentDao;
 import com.madeeasy.entity.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
@@ -17,6 +18,7 @@ public class StudentDaoImpl implements StudentDao {
 
     public StudentDaoImpl() {
         this.sessionFactory = new Configuration().configure().buildSessionFactory();
+//        new FeedbackDaoImpl(sessionFactory);
     }
 
     @Override
